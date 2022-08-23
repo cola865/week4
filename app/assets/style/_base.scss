@@ -27,6 +27,6 @@ a{
         max-width: 720px;
     }
     @include phone{
-        max-width: 373px;
+        max-width: 100vw;
     }
 }
