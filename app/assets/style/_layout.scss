@@ -4,36 +4,86 @@
     .nav-list {
         gap: 64px;
     }
-}
-@include phone{
-    .header{
+    @include phone{
         padding-bottom: 0;
-    }
-    .container{
-        // flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        padding:0;
-        .logo{
-            width: 100%;
-            text-align: center;
-        }
-        .nav-list{
-            width: 100%;
-            flex-wrap: wrap;
-            gap:0;
-            margin-top: $indent * 2;
-            .nav-listitem{
-                flex:0 0 50%;
-                border: 1px solid #fff;
-                font-size: $indent * 2;
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            padding:0;
+            .logo{
+                width: 100%;
                 text-align: center;
-                padding: 12px 56px;
+            }
+            .nav-list{
+                width: 100%;
+                flex-wrap: wrap;
+                gap:0;
+                margin-top: $indent * 2;
+                .nav-listitem{
+                    flex:0 0 50%;
+                    border: 1px solid #fff;
+                    font-size: $indent * 2;
+                    text-align: center;
+                    padding: 12px 56px;
+                }
             }
         }
     }
 }
-
 .footer{
     background-color: $bg-color;
+    .sub-nav{
+        padding:48px 0 33px 0 ;
+        gap: 48px;
+        @include phone{
+            display: none;
+        }
+    }
+    .nav-container{
+        position: relative;
+    }
+    .social-btn{
+        gap: 32px;
+        img{
+            width: 48px;
+        }
+        @include pad{
+            gap: 16px;
+            img{
+                width: 40px;
+            }
+        }
+        @include phone{
+            position: absolute;
+            right: 0;
+            top: 24px;
+            img{
+                width: 24px;
+            }
+        }
+    }
+    .copyright{
+        a:first-child{
+            margin-right: 48px;
+        }
+    }
+    .contact-us{
+        font-size: 36px;
+        padding-bottom:32px;
+        border-bottom: 1px solid #FFFFFF;
+        @include phone{
+            font-size: 16px;
+            padding: 24px 0;
+            img{
+                width: 18px;
+            }
+        }
+    }
+    .copyright{
+        padding: 32px 0;
+        color: #ffffff;
+        @include phone{
+            padding: 16px 0 24px 0;
+        }
+    }
 }
