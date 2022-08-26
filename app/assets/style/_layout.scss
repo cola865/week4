@@ -1,5 +1,5 @@
 .header {
-    background-color: $bg-color;
+    background-color: $primary-color;
     padding: 16px 0;
     .nav-list {
         gap: 64px;
@@ -31,7 +31,7 @@
     }
 }
 .footer{
-    background-color: $bg-color;
+    background-color: $primary-color;
     .sub-nav{
         padding:48px 0 33px 0 ;
         gap: 48px;
@@ -68,7 +68,7 @@
         }
     }
     .contact-us{
-        font-size: 36px;
+        font-size: $indent * 4.5;
         padding-bottom:32px;
         border-bottom: 1px solid #FFFFFF;
         @include phone{
@@ -84,6 +84,12 @@
         color: #ffffff;
         @include phone{
             padding: 16px 0 24px 0;
+            gap: 8px;
+            flex-direction: column;
+            li:last-child{
+                gap: 8px;
+                flex-direction: column;
+            }
         }
     }
 }

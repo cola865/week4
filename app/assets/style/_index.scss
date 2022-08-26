@@ -223,3 +223,40 @@
         }
     }
 }
+.contact-form{
+    padding: 80px 0;
+    background-color: #FBF2F2;
+    .form{
+        max-width: 50%;
+        margin: 0 auto;
+        @include pad{
+            max-width: 83.333333%;
+        }
+        p{
+            margin: 48px 0 24px 0;
+        }
+        label{
+            margin-bottom: 16px;
+        }
+    }
+    .submit{
+        font-size: $indent * 2;
+        font-weight: bold;
+        color: #ffffff;
+        display: block;
+        padding: 16px 176px;
+        margin: 48px auto;
+        background-color: $primary-color;
+        border: none;
+        &:hover{
+            background-color: #650300;
+        }
+        @include pad{
+            padding: 16px 136px;
+        }
+        @include phone{
+            padding: 16px 0;
+            width: 100%;
+        }
+    }
+}
