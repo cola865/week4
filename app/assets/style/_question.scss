@@ -1,0 +1,30 @@
+.question{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    h2{
+        font-size: $indent * 6;
+        font-weight: bold;      
+        &::before{
+            content: '';
+            display: inline-block;
+            border-right: 8px solid #9F1213;
+            margin-right: 16px;
+            height: 72px;
+            vertical-align: top;
+        }
+    }
+    .qa-content{
+        font-size: $indent * 3;
+        font-weight: bold;
+        margin: 32px 0;
+    }
+    .qa-title{
+        font-size: $indent * 2.5;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .qa-answer{
+        font-size: $indent * 2;
+        margin-bottom: 32px;
+    }
+}
