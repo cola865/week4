@@ -183,7 +183,18 @@ a {
     color: #ffffff; }
     @media (max-width: 767px) {
       .footer .copyright {
-        padding: 16px 0 24px 0; } }
+        padding: 16px 0 24px 0;
+        gap: 8px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .footer .copyright li:last-child {
+          gap: 8px;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; } }
 
 .banner {
   height: 787px;
@@ -371,5 +382,62 @@ a {
     .customer-recommend .recommend-list .date {
       font-size: 14px;
       color: #707070; }
+
+.contact-form {
+  padding: 80px 0;
+  background-color: #FBF2F2; }
+  .contact-form .form {
+    max-width: 50%;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      .contact-form .form {
+        max-width: 83.333333%; } }
+    .contact-form .form p {
+      margin: 48px 0 24px 0; }
+    .contact-form .form label {
+      margin-bottom: 16px; }
+  .contact-form .submit {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    padding: 16px 176px;
+    margin: 48px auto;
+    background-color: #AA0601;
+    border: none; }
+    .contact-form .submit:hover {
+      background-color: #650300; }
+    @media (max-width: 992px) {
+      .contact-form .submit {
+        padding: 16px 136px; } }
+    @media (max-width: 767px) {
+      .contact-form .submit {
+        padding: 16px 0;
+        width: 100%; } }
+
+.question {
+  padding-top: 96px;
+  padding-bottom: 80px; }
+  .question h2 {
+    font-size: 48px;
+    font-weight: bold; }
+    .question h2::before {
+      content: '';
+      display: inline-block;
+      border-right: 8px solid #9F1213;
+      margin-right: 16px;
+      height: 72px;
+      vertical-align: top; }
+  .question .qa-content {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 32px 0; }
+  .question .qa-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px; }
+  .question .qa-answer {
+    font-size: 16px;
+    margin-bottom: 32px; }
 
 /*# sourceMappingURL=all.css.map */
